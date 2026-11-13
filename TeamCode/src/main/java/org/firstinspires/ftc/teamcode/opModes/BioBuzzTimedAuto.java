@@ -3,7 +3,7 @@ package org.firstinspires.ftc.teamcode.opModes;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.util.ElapsedTime;
-import org.firstinspires.ftc.teamcode.subsystem.DriveSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.Drive;
 
 /** A small, easy-to-calibrate autonomous starting point. */
 @Autonomous(name = "BioBuzz Timed Auto", group = "Team Garfield")
@@ -13,7 +13,7 @@ public final class BioBuzzTimedAuto extends LinearOpMode {
 
     @Override
     public void runOpMode() throws InterruptedException {
-        DriveSubsystem drive = new DriveSubsystem(hardwareMap);
+        Drive drive = new Drive(hardwareMap);
         telemetry.addLine("Timed auto: drive forward for 1 second. Check the path first.");
         telemetry.update();
         try {
