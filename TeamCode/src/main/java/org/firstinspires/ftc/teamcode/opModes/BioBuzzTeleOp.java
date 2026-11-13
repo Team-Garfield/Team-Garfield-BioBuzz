@@ -1,7 +1,11 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.opModes;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import org.firstinspires.ftc.teamcode.subsystem.DriveSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.IntakeSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.StorageSubsystem;
+import org.firstinspires.ftc.teamcode.subsystem.ShooterSubsystem;
 
 @TeleOp(name = "BioBuzz TeleOp", group = "Team Garfield")
 public final class BioBuzzTeleOp extends OpMode {
